@@ -3,7 +3,7 @@
 #include <limits.h>
 
 long maxSubarrayValue(int arr_count, int* arr) {
-    int i, j, k;
+    int i, j;
     long ans = 0, a, b;
     long* even = (long*)malloc((arr_count+1)*sizeof(long));
     long* odd = (long*)malloc((arr_count+1)*sizeof(long));
@@ -46,3 +46,4 @@ int main() {
     printf("%ld\n", result);
     free(arr);
     return 0;
+}
